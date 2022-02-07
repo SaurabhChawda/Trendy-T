@@ -1,11 +1,11 @@
 @media screen and (max-width: 975px) {
   .card-product-category {
-    margin: 0 2rem;
+    margin: 0 2em;
   }
   .card-offer__container,
   .card-product,
   .card__container--demo {
-    margin: 1rem 2rem;
+    margin: 1rem 2em;
   }
 }
 @media screen and (max-width: 750px) {
@@ -18,12 +18,12 @@
 }
 @media screen and (max-width: 550px) {
   .card-product-category {
-    margin: 0 1rem;
+    margin: 0 1em;
   }
   .card-offer__container,
   .card-product,
   .card__container--demo {
-    margin: 8px 1rem;
+    margin: 8px 1em;
   }
 }
 @media screen and (max-width: 500px) {
