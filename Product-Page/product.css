@@ -177,6 +177,7 @@ body {
   visibility: visible;
   position: fixed;
   grid-area: sidebar;
+  overflow-y: scroll;
   width:250px;
   height: 100%;
   padding: 5rem 1rem;
