@@ -179,32 +179,38 @@ body {
   grid-area: sidebar;
   width:250px;
   height: 100%;
+  padding: 5rem 1rem;
   overflow-y: scroll;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: var(--primary-color);
   border-right: 3px solid var(--primary-color);
   background-color: var(--primary-bg-color);
 }
-.sidebar__title {
-  margin: 1rem;
+/** Sidebar Search **/
+.sidebar__input--search{
   padding: 8px 1rem;
-  border-radius: 8px;
-  font-size: var(--font-size-large);
-  color:var(--white-color);
-  background-color: var(--primary-bg);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
 }
-.sidebar__item {
-  font-size: var(--font-size-large);
-  margin: 12px;
-  padding: 5px;
+input::placeholder{
+  font-size: var(--font-size-regular);
   color: var(--primary-color);
+  position: absolute;
 }
-.sidebar__item:hover {
-  color: var(--secondary-bg);
+/** Filter **/
+.sidebar--filter{
+  margin: 1rem 0 ;
+  color: var(--primary-color);
+  padding: 8px;
 }
+.sidebar__list{
+  margin-top: 8px;
+}
+.sidebar__item{
+  color: var(--primary-color);
+  padding: 4px; 
+}
+
 
 main {
   grid-area: main;
@@ -213,7 +219,7 @@ main {
 
 /*card*/
 .card-product {
-  margin: 2rem 5rem;
+  margin: 5rem 5rem;
   display: grid;
   gap: 20px;
   grid-template-rows: auto;

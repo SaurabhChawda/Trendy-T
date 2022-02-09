@@ -1,7 +1,8 @@
-@media screen and (max-width: 975px) {
-  .card-product-category {
-    margin: 0 2em;
+@media screen and (max-width: 1150px) {
+  .card-product{
+    margin: 3em 2em;
   }
+
 }
 @media screen and (max-width: 800px) {
   body {
@@ -13,10 +14,6 @@
   main{
       grid-area: main;
       width: 100%;
-  }
-  .card-product-category,
-  .card__container--demo {
-    grid-template-columns: 1fr;
   }
   .nav-bar--simple {
     display: none;
@@ -35,12 +32,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .card-product-category {
-    margin: 0 1em;
-  }
-  .card-offer__container,
-  .card-product,
-  .card__container--demo {
-    margin: 8px 1em;
+  .card-product{
+    margin: 2em 1.5em;
   }
 }
