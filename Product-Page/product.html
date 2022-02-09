@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy-T</title>
-    <link rel="stylesheet" href="/Home-Page/index.css">
-    <link rel="stylesheet" href="/Home-Page/responsive.css">
+    <link rel="stylesheet" href="/Product-Page/product.css">
+    <link rel="stylesheet" href="/Product-Page/product-Responsive.css">
 </head>
 
 <body>
@@ -68,119 +68,89 @@
         </ul>
     </div>
 
+    <!-- sidebar -->
+
+    <div class="sidebar">
+            <input class="sidebar__input--search" type="text" placeholder="Search Product">
+            <div class="sidebar--filter sidebar--price-filter">
+                <h2>Price</h2>
+                <ul class="sidebar__list--price-filter sidebar__list">
+                    <li class="sidebar__item sidebar__item--price-filter">
+                        <input class="sidebar__input" type="radio" name="price">
+                        <label for="Price Filter">Range ₹250 - ₹350 </label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--price-filter">
+                        <input class="sidebar__input" type="radio" name="price">
+                        <label for="Price Filter">Range ₹350 - ₹450 </label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--price-filter" >
+                        <input class="sidebar__input" type="radio" name="price">
+                        <label for="Price Filter">Range ₹550 - ₹650 </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar--filter sidebar--category-filter">
+                <h2>Category</h2>
+                <ul class="sidebar__list sidebar__list--category-filter">
+                    <li class="sidebar__item sidebar__item--category-filter">
+                        <input class="sidebar__input" type="checkbox">
+                        <label for="category Filter">Man T-Shirt</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--category-filter">
+                        <input class="sidebar__input" type="checkbox">
+                        <label for="category Filter">Women T-Shirt</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--category-filter" >
+                        <input class="sidebar__input" type="checkbox">
+                        <label for="category Filter">Kid T-Shirt</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--category-filter" >
+                        <input class="sidebar__input" type="checkbox">
+                        <label for="category Filter">Family T-Shirt</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar--filter sidebar--rating-filter">
+                <h2>Rating</h2>
+                <ul class="sidebar__list sidebar__list--rating-filter">
+                    <li class="sidebar__item sidebar__item--rating-filter">
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">4 Star & above</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--rating-filter">
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">3 Star & above</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--rating-filter" >
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">2 Star & above</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--rating-filter" >
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">1 Star & above</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar--filter sidebar--sortBy-filter">
+                <h2>Sort by</h2>
+                <ul class="sidebar__list sidebar__list--sortBy-filter">
+                    <li class="sidebar__item sidebar__item--sortBy-filter">
+                        <input class="sidebar__input" type="radio" name="Sorting">
+                        <label for="sortBy Filter">Price - Low to high</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--sortBy-filter">
+                        <input class="sidebar__input" type="radio" name="Sorting">
+                        <label for="sortBy Filter">price - High to Low</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__btn">
+                <button class="sidebar__btn--clear-filter">Clear Filter</button>
+            </div>
+    </div>
+
     <main>
-        <!-- Home Page Content -->
-
-        <section class="home home-wrapper">
-            <h1 class="home-wrapper__title">TRENDY-T</h1>
-            <h2 class="home-wrapper__subtitle">CUSTOM PRINTED T-SHIRTS</h2>
-            <P class="home-wrapper__content">Wear trendy, funky, stylish T-Shirts.</P>
-            <p class="home-wrapper__text">"What you Wear is What you are."</p>
-            <a href="/Product-Page/product.html"><button class="home__btn">Shop Now</button></a>
-        </section>
-
-        <!-- Home Page Content Ends Here -->
-
-        <!-- Header -->
-
-        <div class="card__header">
-            <h1 class="card__header--title">CATEGORY</h1>
-        </div>
-
-        <!-- Header Ends Here-->
-
-        <!-- Header product Category -->
-
-        <section class="card-product-category">
-            <div class="card-product-category--demo card-product-category--man">
-
-                <img class="card-product-category--demo-img card-product-category--man-img"
-                    src="/assets/image/HomePage-Images/Trendy-T Man.jpg" alt="men">
-
-                <div class="card-product-category__content--demo">
-                    <h1 class="card-product-category__title card-product-category__title--man">Men's T-shirt</h1>
-                    <a href=""><button class="card-product-category__btn card-product-category__btn--man">Buy
-                            Now</button></a>
-                </div>
-
-            </div>
-            <div class="card-product-category--demo card-product-category--Women">
-                <img class="card-product-category--demo-img card-product-category--women-img"
-                    src="/assets/image/HomePage-Images/Trendy-T Women.jpg" alt="women">
-                <div class="card-product-category__content--demo">
-                    <h1 class="card-product-category__title card-product-category__title--women">women's T-shirt</h1>
-                    <a href=""><button class="card-product-category__btn card-product-category__btn--women">Buy
-                            Now</button></a>
-                </div>
-            </div>
-            <div class="card-product-category--demo card-product-category--kid">
-                <img class="card-product-category--demo-img card-product-category--kid-img"
-                    src="/assets/image/HomePage-Images/Trendy-T Kids.jpg" alt="kid">
-                <div class="card-product-category__content--demo">
-                    <h1 class="card-product-category__title card-product-category__title--kid">Kid's T-Shirt</h1>
-                    <a href=""><button class="card-product-category__btn card-product-category__btn--kid">Buy
-                            Now</button></a>
-                </div>
-            </div>
-            <div class="card-product-category--demo card-product-category--family">
-                <img class="card-product-category--demo-img card-product-category--family-img"
-                    src="/assets/image/HomePage-Images/Trendy-T Family.jpg" alt="family">
-                <div class="card-product-category__content--demo">
-                    <h1 class="card-product-category__title card-product-category__title--family">Family T-Shirt</h1>
-                    <a href=""><button class="card-product-category__btn card-product-category__btn--family">Buy
-                            Now</button></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Header product Category Ends Here-->
-
-        <!-- Header -->
-
-        <div class="card__header">
-            <h1 class="card__header--title">OFFER</h1>
-        </div>
-
-        <!-- Header Ends Here-->
-
-        <!-- Header product offer -->
-
-        <section class="card card-offer">
-            <div class="card__container--demo card-offer__container">
-                <div class="card__wrapper--demo card-offer__wrapper">
-                    <h1 class="card__title--demo card-offer__title">FLAT 10% </h1>
-                    <h2 class="card__subtitle--demo card-offer__Subtitle">OFF</h2>
-                    <a href=""><button class="card__btn--demo card-offer__btn">Get Offer</button></a>
-                </div>
-                <div class="card__wrapper--demo card-offer__wrapper">
-                    <h1 class="card__title--demo card-offer__title">FLAT 20% </h1>
-                    <h2 class="card__subtitle--demo card-offer__Subtitle">OFF</h2>
-                    <a href=""><button class="card__btn--demo card-offer__btn">Get Offer</button></a>
-                </div>
-                <div class="card__wrapper--demo card-offer__wrapper">
-                    <h1 class="card__title--demo card-offer__title">FLAT 40% </h1>
-                    <h2 class="card__subtitle--demo card-offer__Subtitle">OFF</h2>
-                    <a href=""><button class="card__btn--demo card-offer__btn">Get Offer</button></a>
-                </div>
-                <div class="card__wrapper--demo card-offer__wrapper">
-                    <h1 class="card__title--demo card-offer__title">FLAT 50% </h1>
-                    <h2 class="card__subtitle--demo card-offer__Subtitle">OFF</h2>
-                    <a href=""><button class="card__btn--demo card-offer__btn">Get Offer</button></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Header product offer Ends Here-->
-
-        <!-- Header -->
-
-        <div class="card__header">
-            <h1 class="card__header--title">PRODUCT</h1>
-        </div>
-
-        <!-- Header Ends Here-->
-
-        <!-- Card product -->
+        <!-- Product Card-->
 
         <section class="card-product">
 
@@ -200,9 +170,6 @@
                     <div class="card-product__button--container">
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
                     </div>
                 </div>
             </div>
@@ -224,9 +191,6 @@
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSeller</span>
-                    </div>
                 </div>
             </div>
             <!-- product Three -->
@@ -245,9 +209,6 @@
                     <div class="card-product__button--container">
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
                     </div>
                 </div>
             </div>
@@ -269,9 +230,6 @@
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
-                    </div>
                 </div>
             </div>
             <!-- product Five -->
@@ -281,7 +239,7 @@
                         <img class="card-product__bg--img" src="/assets/image/Product-Images/math.jpg">
                     </div>
                     <div class="card-product__content">
-                        <h3 class="card-product__content--title">mathematics T-shirt</h3>
+                        <h3 class="card-product__content--title">Mathematics Tshirt</h3>
                         <span class="card-product__content--price">₹ 450/-</span>
                         <small class="card-product__content--price-line">₹ 550</small>
                     </div>
@@ -290,9 +248,6 @@
                     <div class="card-product__button--container">
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
                     </div>
                 </div>
             </div>
@@ -314,9 +269,6 @@
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
-                    </div>
                 </div>
             </div>
             <!-- product Seven -->
@@ -335,9 +287,6 @@
                     <div class="card-product__button--container">
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
                     </div>
                 </div>
             </div>
@@ -359,49 +308,12 @@
                         <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
-                    <div class="card-product__badge">
-                        <span class="card-product__badge-text">BestSaller</span>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Card product Ends Here-->
 
-        <!-- Header -->
-
-        <div class="card__header">
-            <h1 class="card__header--title">Service</h1>
-        </div>
-
-        <!-- Header Ends Here-->
-
-        <!-- Header product service -->
-
-        <section class="card card-service">
-            <div class="card__container--demo card-service__container">
-                <div class="card__wrapper--demo card-service__wrapper">
-                    <img class="card-service__img" src="/assets/image/HomePage-Images/Best-Quality.png"
-                        alt="Best-Quality">
-                    <h1 class="card__title--demo card-service__title">Best Quality</h1>
-                </div>
-                <div class="card__wrapper--demo card-service__wrapper">
-                    <img class="card-service__img" src="/assets/image/HomePage-Images/Best-Offer.png" alt="Best-Offer">
-                    <h1 class="card__title--demo card-service__title">Best Offer</h1>
-                </div>
-                <div class="card__wrapper--demo card-service__wrapper">
-                    <img class="card-service__img" src="/assets/image/HomePage-Images/Secure.png" alt="Secure">
-                    <h1 class="card__title--demo card-service__title">Secure</h1>
-                </div>
-                <div class="card__wrapper--demo card-service__wrapper">
-                    <img class="card-service__img" src="/assets/image/HomePage-Images/Free-Shipping.png"
-                        alt="Free-Shipping">
-                    <h1 class="card__title--demo card-service__title">Free Shipping</h1>
-                </div>
-            </div>
-        </section>
-
-        <!-- Header product Service Ends Here-->
     </main>
     <!-- Footer -->
 
@@ -418,7 +330,7 @@
             <h6 class="footer__content">Designed by Saurabh Chawda</h6>
         </div>
     </div>
-    <script src="/Home-Page/index.js"></script>
+    <script src="/Product-Page/product.js"></script>
 </body>
 
 </html>

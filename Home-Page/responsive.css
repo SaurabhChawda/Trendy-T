@@ -32,4 +32,7 @@
   display:flex;
   justify-content: space-between;
 }
+.nav-bar__img--logo{
+  margin-left: auto;
+}
 }
