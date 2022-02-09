@@ -76,62 +76,78 @@
                 <h2>Price</h2>
                 <ul class="sidebar__list--price-filter sidebar__list">
                     <li class="sidebar__item sidebar__item--price-filter">
-                        <input type="radio">
+                        <input class="sidebar__input" type="radio" name="price">
                         <label for="Price Filter">Range ₹250 - ₹350 </label>
                     </li>
                     <li class="sidebar__item sidebar__item--price-filter">
-                        <input type="radio">
+                        <input class="sidebar__input" type="radio" name="price">
                         <label for="Price Filter">Range ₹350 - ₹450 </label>
                     </li>
                     <li class="sidebar__item sidebar__item--price-filter" >
-                        <input type="radio">
+                        <input class="sidebar__input" type="radio" name="price">
                         <label for="Price Filter">Range ₹550 - ₹650 </label>
                     </li>
                 </ul>
             </div>
             <div class="sidebar--filter sidebar--category-filter">
                 <h2>Category</h2>
-                <ul class="sidebar__list--category-filter sidebar__list">
+                <ul class="sidebar__list sidebar__list--category-filter">
                     <li class="sidebar__item sidebar__item--category-filter">
-                        <input type="checkbox">
+                        <input class="sidebar__input" type="checkbox">
                         <label for="category Filter">Man T-Shirt</label>
                     </li>
                     <li class="sidebar__item sidebar__item--category-filter">
-                        <input type="checkbox">
+                        <input class="sidebar__input" type="checkbox">
                         <label for="category Filter">Women T-Shirt</label>
                     </li>
                     <li class="sidebar__item sidebar__item--category-filter" >
-                        <input type="checkbox">
+                        <input class="sidebar__input" type="checkbox">
                         <label for="category Filter">Kid T-Shirt</label>
                     </li>
                     <li class="sidebar__item sidebar__item--category-filter" >
-                        <input type="checkbox">
+                        <input class="sidebar__input" type="checkbox">
                         <label for="category Filter">Family T-Shirt</label>
                     </li>
                 </ul>
             </div>
-            <div class="sidebar--price-filter">
-                <h2>Price</h2>
-                <ul class="sidebar__list--price-filter">
-                    <li class="sidebar__item--price-filter">
-                        <input type="radio">
-                        <label for="Price Filter">Range ₹250 - ₹350 </label>
+            <div class="sidebar--filter sidebar--rating-filter">
+                <h2>Rating</h2>
+                <ul class="sidebar__list sidebar__list--rating-filter">
+                    <li class="sidebar__item sidebar__item--rating-filter">
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">4 Star & above</label>
                     </li>
-                    <li class="sidebar__item--price-filter">
-                        <input type="radio">
-                        <label for="Price Filter">Range ₹350 - ₹450 </label>
+                    <li class="sidebar__item sidebar__item--rating-filter">
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">3 Star & above</label>
                     </li>
-                    <li class="sidebar__item--price-filter" >
-                        <input type="radio">
-                        <label for="Price Filter">Range ₹550 - ₹650 </label>
+                    <li class="sidebar__item sidebar__item--rating-filter" >
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">2 Star & above</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--rating-filter" >
+                        <input class="sidebar__input" type="radio" name="Rating">
+                        <label for="rating Filter">1 Star & above</label>
                     </li>
                 </ul>
             </div>
+            <div class="sidebar--filter sidebar--sortBy-filter">
+                <h2>Sort by</h2>
+                <ul class="sidebar__list sidebar__list--sortBy-filter">
+                    <li class="sidebar__item sidebar__item--sortBy-filter">
+                        <input class="sidebar__input" type="radio" name="Sorting">
+                        <label for="sortBy Filter">Price - Low to high</label>
+                    </li>
+                    <li class="sidebar__item sidebar__item--sortBy-filter">
+                        <input class="sidebar__input" type="radio" name="Sorting">
+                        <label for="sortBy Filter">price - High to Low</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__btn">
+                <button class="sidebar__btn--clear-filter">Clear Filter</button>
+            </div>
     </div>
-
-
-
-
 
     <main>
         <!-- Product Card-->
