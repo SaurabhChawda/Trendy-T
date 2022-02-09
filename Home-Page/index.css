@@ -178,7 +178,7 @@ main {
 /* Home */
 
 .home-wrapper {
-  height: calc(100vh - 12rem);
+  height: calc(100vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,7 +220,7 @@ main {
 .card__header {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 .card__header--title {
   padding: 6px;
