@@ -186,6 +186,7 @@ body {
   border-right: 3px solid var(--primary-color);
   background-color: var(--primary-bg-color);
 }
+
 /** Sidebar Search **/
 .sidebar__input--search{
   padding: 8px 1rem;
@@ -208,7 +209,10 @@ input::placeholder{
 }
 .sidebar__item{
   color: var(--primary-color);
-  padding: 2px; 
+  padding: 4px; 
+}
+.sidebar--price-filter{
+  margin:10px 2px;
 }
 .sidebar__btn{
   margin-top: 1rem;
