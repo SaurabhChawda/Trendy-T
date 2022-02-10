@@ -21,16 +21,16 @@
             <li><a class="nav-bar__item" href="/index.html">Home</a></li>
             <li><a class="nav-bar__item" href="/Product-Page/product.html">Product</a></li>
 
-            <li class="nav-bar__item" ><a href="/wishlist-page/wishlist.html"><img
+            <li class="nav-bar__item"><a href="/wishlist-page/wishlist.html"><img
                         class="nav-bar__img--icon nav-bar__img--wishlist"
                         src="/assets/image/HomePage-Images/Wishlist.png" alt="Wishlist"></a></li>
 
-            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"  ><img
+            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"><img
                         src="/assets/image/HomePage-Images/cart.png" alt="cart-badge"
                         class="nav-bar__img--icon nav-bar__img--cart badge__icon--img"></a>
                 <span class="badge__icon--primary badge--logo ">1</span>
             </li>
-            
+
             <li class="nav-bar__item"><a href=""><img class="nav-bar__img--icon nav-bar__img--login"
                         src="/assets/image/HomePage-Images/Login.png" alt="Login/Sign-Up"></a></li>
         </ul>
@@ -75,113 +75,145 @@
 
     <main>
         <!-- Product Card-->
-        <section class="wishlist__header">
-            <h3 class="wishlist__title">My Wishlist</h3>
+        <section class="cart__header">
+            <h3 class="cart__title">My Cart</h3>
         </section>
 
-        <section class="card-product">
+        <section class="cart__content">
+            <div class="card-product">
+                <!-- product One -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Tom and Jerry.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Tom and Jerry Tshirt</h3>
+                            <span class="card-product__content--price">₹ 350/-</span>
+                            <small class="card-product__content--price-line">₹ 500</small>
+                        </div>
+                        <div class="card-product__wrapper--quantity">
+                            <small class="card-product--quantity">Quantity</small>
+                            <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                            <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                        </div>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- product One -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/Tom and Jerry.jpg">
+                <!-- product Two -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Tom.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Tom Tshirt</h3>
+                            <span class="card-product__content--price">₹ 300/-</span>
+                            <small class="card-product__content--price-line">₹ 450</small>
+                        </div>
                     </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Tom and Jerry Tshirt</h3>
-                        <span class="card-product__content--price">₹ 350/-</span>
-                        <small class="card-product__content--price-line">₹ 500</small>
+                    <div class="card-product__wrapper--quantity">
+                        <small class="card-product--quantity">Quantity</small>
+                        <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                        <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
+                <!-- product Three -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Talk to you later.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Talk to you later</h3>
+                            <span class="card-product__content--price">₹ 400/-</span>
+                            <small class="card-product__content--price-line">₹ 500</small>
+                        </div>
                     </div>
+                    <div class="card-product__wrapper--quantity">
+                        <small class="card-product--quantity">Quantity</small>
+                        <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                        <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product Four -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Owl.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Owl Tshirt</h3>
+                            <span class="card-product__content--price">₹ 350/-</span>
+                            <small class="card-product__content--price-line">₹ 500</small>
+                        </div>
+                    </div>
+                    <div class="card-product__wrapper--quantity">
+                        <small class="card-product--quantity">Quantity</small>
+                        <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                        <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card product Ends Here-->
+
+            <!-- cart Detail -->
+
+            <div class="cart__detail">
+                <div class="cart__item-demo cart__detail--price">
+                    <h1>PRICE DETAILS</h1>
+                </div>
+                <hr>
+                <div class="cart__item-demo cart__detail--total">
+                    <small>Items</small>
+                    <small>2</small>
+                </div>
+                <div class="cart__item-demo cart__detail--mrp">
+                    <small>Total MRP</small>
+                    <small>₹1000</small>
+                </div>
+                <div class="cart__item-demo cart__detail--discount">
+                    <small>Discount</small>
+                    <small>- ₹100</small>
+                </div>
+                <div class="cart__item-demo cart__detail-delivery">
+                    <small>Delivery Charges</small>
+                    <small>₹100</small>
+                </div>
+                <hr>
+                <div class="cart__item-demo cart__detail--total">
+                    <small>Total </small>
+                    <small>₹1000</small>
+                </div>
+                <div class="cart__item-demo cart__detail--place-order">
+                    <button class="cart__btn">Place order</button>
                 </div>
             </div>
 
-            <!-- product Two -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/Tom.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Tom Tshirt</h3>
-                        <span class="card-product__content--price">₹ 300/-</span>
-                        <small class="card-product__content--price-line">₹ 450</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-            <!-- product Three -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/Talk to you later.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Talk to you later</h3>
-                        <span class="card-product__content--price">₹ 400/-</span>
-                        <small class="card-product__content--price-line">₹ 500</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product Four -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/Owl.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Owl Tshirt</h3>
-                        <span class="card-product__content--price">₹ 350/-</span>
-                        <small class="card-product__content--price-line">₹ 500</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-            <!-- product Five -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/math.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Mathematics Tshirt</h3>
-                        <span class="card-product__content--price">₹ 450/-</span>
-                        <small class="card-product__content--price-line">₹ 550</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Cart Detail Ends Here -->
 
         </section>
-        <!-- Card product Ends Here-->
-
     </main>
     <!-- Footer -->
 

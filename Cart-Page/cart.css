@@ -34,7 +34,7 @@ a {
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-rows: 2.5rem  minmax(calc(100vh - 7.5rem),1fr) 5rem;
+  grid-template-rows: 2.5rem minmax(calc(100vh - 7.5rem), 1fr) 5rem;
   grid-template-areas:
     "header"
     "main"
@@ -72,7 +72,7 @@ body {
   padding: 5px 8px;
   border: 2px solid transparent;
 }
-.nav-bar__img--icon{
+.nav-bar__img--icon {
   min-width: 1rem;
   max-width: 1.5rem;
 }
@@ -147,41 +147,81 @@ body {
   border: 2px solid var(--primary-color);
 }
 
-/*** Cart badge ***/ 
-.badge__wrapper{
-    display: inline-block;
-    position: relative;
-  }
-  .badge--logo{
-    font-size:70%;
-    font-weight: 900;
-    background-color: red;
-    color: white;
-    border-radius:10px;
-    padding:0.1rem 0.4rem;
-    position: absolute;
-    right:-6px;
-    top:0;
-  }
-  /*badge on Icon */
-  .badge__icon--img{
-    width: 3rem;
-  }
-  
+/*** Cart badge ***/
+.badge__wrapper {
+  display: inline-block;
+  position: relative;
+}
+.badge--logo {
+  font-size: 70%;
+  font-weight: 900;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  right: -6px;
+  top: 0;
+}
+/*badge on Icon */
+.badge__icon--img {
+  width: 3rem;
+}
 
 main {
   grid-area: main;
+  display: grid;
   background-color: var(--secondary-bg-color);
 }
 
-/* Wishlist Header */
-.wishlist__header{
-    margin-top: 3rem;
-    text-align: center;
-    color:var(--primary-color);
-    font-size: var(--font-size-large);
+/* Cart Header */
+.cart__header {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--font-size-large);
+}
+.cart__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
+/* Cart Detail */
+
+.cart__detail {
+  margin: 2rem 5rem;
+  padding: 1rem;
+  max-width: 40rem;
+  min-width: 15rem;
+  height: min-content;
+  border-radius: 5px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0px 0px 5px rgb(167, 167, 167);
+}
+.cart__detail--price {
+  color: var(--primary-color);
+}
+.cart__item-demo {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+}
+.cart__btn {
+  padding: 4px;
+  color: var(--white-color);
+  font-size: var(--font-size-regular);
+  font-weight: 600;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.cart__btn:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--white-color);
+}
 /*card*/
 .card-product {
   margin: 2rem 5rem;
@@ -215,13 +255,33 @@ main {
   color: grey;
   text-decoration: line-through;
 }
-
 .card-product__button--container {
   margin: 8px;
   padding: 8px;
   display: flex;
   justify-content: center;
   margin: 8px 0rem;
+}
+.card-product__wrapper--quantity{
+  margin:4px 4px;
+  color:var(--white-color);
+  font-size: var(--font-size-large);
+}
+.card-product--quantity-demo{
+  padding: 2px 4px;
+  font-size: var(--font-size-regular);
+}
+.card-product--quantity-add{
+  color:var(--white-color);
+  background-color: var(--primary-color);
+  border:2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.card-product--quantity-sub{
+  color:var(--primary-color);
+  background-color:transparent;
+  border:2px solid var(--primary-color);
+  border-radius: 5px;
 }
 .card-product__btn {
   padding: 8px;
@@ -232,22 +292,12 @@ main {
   border-radius: 5px;
 }
 .card-product__button--primary {
-  margin-right: 0.2rem;
   background-color: var(--primary-color);
   color: white;
-}
-.card-product__button--secondary {
-  margin-left: 0.2rem;
-  background-color: transparent;
-  color: var(--primary-color);
 }
 .card-product__button--primary:hover {
   background-color: transparent;
   color: var(--primary-color);
-}
-.card-product__button--secondary:hover {
-  background-color: var(--primary-color);
-  color: white;
 }
 .card-product__badge {
   background-color: rgb(255, 255, 255);
@@ -262,7 +312,6 @@ main {
   left: 1rem;
 }
 /* card Product Ends Here */
-
 /***** footer *****/
 
 .footer {
