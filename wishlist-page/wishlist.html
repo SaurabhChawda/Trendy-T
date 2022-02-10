@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy-T</title>
-    <link rel="stylesheet" href="/Product-Page/product.css">
-    <link rel="stylesheet" href="/Product-Page/product-Responsive.css">
+    <link rel="stylesheet" href="/wishlist-page/wishlist.css">
+    <link rel="stylesheet" href="/wishlist-page/wishlist-Responsive.css">
 </head>
 
 <body>
@@ -68,90 +68,12 @@
         </ul>
     </div>
 
-    <!-- sidebar -->
-
-    <div class="sidebar">
-            <input class="sidebar__input--search" type="text" placeholder="Search Product">
-            <div class="sidebar--filter sidebar--price-filter">
-                <h2>Price</h2>
-                <ul class="sidebar__list--price-filter sidebar__list">
-                    <li class="sidebar__item sidebar__item--price-filter">
-                        <input class="sidebar__input" type="radio" name="price">
-                        <label for="Price Filter">Range ₹250 - ₹350 </label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--price-filter">
-                        <input class="sidebar__input" type="radio" name="price">
-                        <label for="Price Filter">Range ₹350 - ₹450 </label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--price-filter" >
-                        <input class="sidebar__input" type="radio" name="price">
-                        <label for="Price Filter">Range ₹550 - ₹650 </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar--filter sidebar--category-filter">
-                <h2>Category</h2>
-                <ul class="sidebar__list sidebar__list--category-filter">
-                    <li class="sidebar__item sidebar__item--category-filter">
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Man T-Shirt</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--category-filter">
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Women T-Shirt</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--category-filter" >
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Kid T-Shirt</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--category-filter" >
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Family T-Shirt</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar--filter sidebar--rating-filter">
-                <h2>Rating</h2>
-                <ul class="sidebar__list sidebar__list--rating-filter">
-                    <li class="sidebar__item sidebar__item--rating-filter">
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">4 Star & above</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--rating-filter">
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">3 Star & above</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--rating-filter" >
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">2 Star & above</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--rating-filter" >
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">1 Star & above</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar--filter sidebar--sortBy-filter">
-                <h2>Sort by</h2>
-                <ul class="sidebar__list sidebar__list--sortBy-filter">
-                    <li class="sidebar__item sidebar__item--sortBy-filter">
-                        <input class="sidebar__input" type="radio" name="Sorting">
-                        <label for="sortBy Filter">Price - Low to high</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--sortBy-filter">
-                        <input class="sidebar__input" type="radio" name="Sorting">
-                        <label for="sortBy Filter">price - High to Low</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar__btn">
-                <button class="sidebar__btn--clear-filter">Clear Filter</button>
-            </div>
-    </div>
-
     <main>
         <!-- Product Card-->
-
+        <section class="wishlist__header">
+            <h3 class="wishlist__title">My Wishlist</h3>
+        </section>
+        
         <section class="card-product">
 
             <!-- product One -->
@@ -168,7 +90,7 @@
                 </div>
                 <div class="card-product__secondary--actions">
                     <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
+                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
                 </div>
@@ -188,7 +110,7 @@
                 </div>
                 <div class="card-product__secondary--actions">
                     <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
+                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
                 </div>
@@ -207,7 +129,7 @@
                 </div>
                 <div class="card-product__secondary--actions">
                     <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
+                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
                 </div>
@@ -227,7 +149,7 @@
                 </div>
                 <div class="card-product__secondary--actions">
                     <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
+                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
                 </div>
@@ -246,72 +168,13 @@
                 </div>
                 <div class="card-product__secondary--actions">
                     <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
+                        <button class=" card-product__btn card-product__button--primary">REMOVE</button>
                         <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
                     </div>
                 </div>
             </div>
 
-            <!-- product Six -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/Love.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Camera Love</h3>
-                        <span class="card-product__content--price">₹ 400/-</span>
-                        <small class="card-product__content--price-line">₹ 500</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-            <!-- product Seven -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/google IT.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Google it</h3>
-                        <span class="card-product__content--price">₹ 350/-</span>
-                        <small class="card-product__content--price-line">₹ 500</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- product Eight -->
-            <div class="card-product__wrapper">
-                <div class="card-product__primary--actions">
-                    <div class="card-product__bg">
-                        <img class="card-product__bg--img" src="/assets/image/Product-Images/feel Alive.jpg">
-                    </div>
-                    <div class="card-product__content">
-                        <h3 class="card-product__content--title">Feel Alive Tshirt</h3>
-                        <span class="card-product__content--price">₹ 450/-</span>
-                        <small class="card-product__content--price-line">₹ 550</small>
-                    </div>
-                </div>
-                <div class="card-product__secondary--actions">
-                    <div class="card-product__button--container">
-                        <button class=" card-product__btn card-product__button--primary">WISHLIST</button>
-                        <button class="card-product__btn card-product__button--secondary">BUY NOW</button>
-                    </div>
-                </div>
-            </div>
         </section>
-
         <!-- Card product Ends Here-->
 
     </main>
@@ -330,7 +193,7 @@
             <h6 class="footer__content">Designed by Saurabh Chawda</h6>
         </div>
     </div>
-    <script src="/Product-Page/product.js"></script>
+    <script src="/wishlist-page/wishlist.js"></script>
 </body>
 
 </html>
