@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy-T</title>
+    <link rel="stylesheet" href="/Signup-page/signup.css">
+    <link rel="stylesheet" href="/Signup-page/signup-Responsive.css">
+</head>
+
+<body>
+    <!-- Navigation Bar Desktop -->
+    <nav class="nav-bar nav-bar--simple">
+        <nav class="nav-bar--logo">
+            <a href="/index.html"><img class="nav-bar__img--logo" src="/assets/image/HomePage-Images/Trendy-T Logo.png"
+                    alt="AQUA_UI"></a>
+        </nav>
+        <ul class="nav-bar__list">
+            <li><a class="nav-bar__item" href="/index.html">Home</a></li>
+            <li><a class="nav-bar__item" href="/Product-Page/product.html">Product</a></li>
+
+            <li class="nav-bar__item"><a href="/wishlist-page/wishlist.html"><img
+                        class="nav-bar__img--icon nav-bar__img--wishlist"
+                        src="/assets/image/HomePage-Images/Wishlist.png" alt="Wishlist"></a></li>
+
+            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"><img
+                        src="/assets/image/HomePage-Images/cart.png" alt="cart-badge"
+                        class="nav-bar__img--icon nav-bar__img--cart badge__icon--img"></a>
+                <span class="badge__icon--primary badge--logo ">1</span>
+            </li>
+
+            <li class="nav-bar__item"><a href="/Login-page/login.html"><img
+                        class="nav-bar__img--icon nav-bar__img--login" src="/assets/image/HomePage-Images/Login.png"
+                        alt="Login/Sign-Up"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation Bar For Tab and Mobile  -->
+
+    <div class="nav-bar nav-bar--hamburger">
+        <div class="nav-bar--logo">
+            <a href="/index.html"><img class="nav-bar__img--logo" src="/assets/image/HomePage-Images/Trendy-T Logo.png"
+                    alt="TRENDY-T"></a>
+        </div>
+        <div class="nav-bar--hamburger">
+            <img class="nav-bar__img--hamburger" src="/assets/image/HomePage-Images/Hamburger Menu.png" alt="Hamburger">
+        </div>
+    </div> -->
+
+    <!---Hamburger List -->
+    <div class="hamburger">
+        <div class="hamburger__header--wrapper">
+            <h1 class="hamburger__title">TRENDY-T</h1>
+            <img class="hamburger__close-btn" src="/assets/image/HomePage-Images/Hamburger Close.png" alt="Hamburger">
+        </div>
+        <ul class="hamburger__list">
+            <a href="/index.html">
+                <li class="hamburger__item">Home</li>
+            </a>
+            <a href="/Product-Page/product.html">
+                <li class="hamburger__item">Product</li>
+            </a>
+            <a href="/wishlist-page/wishlist.html">
+                <li class="hamburger__item">Wishlist</li>
+            </a>
+            <a href="/Cart-Page/cart.html">
+                <li class="hamburger__item">Cart</li>
+            </a>
+            <a href="/Login-page/login.html">
+                <button class="hamburger__item hamburger__btn ">Login / Sign-Up</button>
+            </a>
+        </ul>
+    </div>
+
+    <main>
+        <section class="signup">
+            <div class="signup--header">
+                <h1 class="signup__title">Sign-Up</h1>
+            </div>
+            <form class="signup-form">
+                    <div class="signup-form--username-wrapper">
+                        <div class="signup-form--name-wrapper signup-form--firstname-wrapper">
+                            <label class="signup-form__label signup-form--firstname"
+                                for="userName"><b>FirstName</b></label>
+                            <input class="signup-form__input-demo signup-form__input--username" type="text"
+                                placeholder="Firstname" required>
+                        </div>
+                        <div class="signup-form--name-wrapper signup-form--lastname-wrapper">
+                            <label class="signup-form__label signup-form--lastname" for="userName"><b>SurName</b></label>
+                            <input class="signup-form__input-demo signup-form__input--username" type="text"
+                                placeholder="Surname" required>
+                        </div>
+                    </div>
+
+
+                    <label class="signup-form__label signup-form--gmail" for="userGmail"><b>Email Address</b></label>
+                    <input class="signup-form__input-demo signup-form__input--usergmail" type="email"
+                        placeholder="trendyt@gmail.com" name="uname" required>
+
+                    <label class="signup-form__label signup-form--address" for="address"><b>Address</b></label>
+                    <input class="signup-form__input-demo signup-form__input--password" type="address"
+                        placeholder="Enter Password" name="password" required>
+                    </input>
+                    <label class="signup-form__label signup-form--contact" for="contact"><b>Contact</b></label>
+                    <input class="signup-form__input-demo signup-form__input--contact" type="contact"
+                        placeholder="Contact Number" required>
+
+
+                    <div class="signup-form--user-password-wrapper">
+                        <div class="signup-form--password-wrapper signup-form--first-password-wrapper">
+                            <label class="signup-form__label signup-form--password" for="password"><b>Password</b></label>
+                            <input class="signup-form__input-demo signup-form__input--password" type="password"
+                                placeholder="Enter Password" name="password" required>
+                        </div>
+                        <div class="signup-form--password-wrapper signup-form--Repeat-password-wrapper">
+                            <label class="signup-form__label signup-form--password" for="password"><b>Repeat
+                                    Password</b></label>
+                            <input class="signup-form__input-demo signup-form__input--password" type="password"
+                                placeholder="Repeat Password" name="password" required>
+                        </div>
+                    </div>
+                <div class="signup-form--submit">
+                    <button class="signup-form__btn--submit">Submit</button>
+                </div>
+
+        </section>
+    </main>
+    <!-- Footer -->
+
+    <div class="footer">
+        <ul class="footer__list">
+            <li><a class="footer__item" href="https://github.com/SaurabhChawda/AQUA_UI"><img class="footer__img"
+                        src="/assets/image/HomePage-Images/Github.png" alt="Github"></a></li>
+            <li><a class="footer__item" href="https://twitter.com/home"><img class="footer__img"
+                        src="/assets/image/HomePage-Images/Twitter sds.png" alt="Twitter"></a></li>
+            <li><a class="footer__item" href="https://www.linkedin.com/in/saurabh-chawda-36a28a1b7/"><img
+                        class="footer__img" src="/assets/image/HomePage-Images/LinkedIn.png" alt="LinkedIn"></a></li>
+        </ul>
+        <div class="footer__content--wrapper">
+            <h6 class="footer__content">Designed by Saurabh Chawda</h6>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

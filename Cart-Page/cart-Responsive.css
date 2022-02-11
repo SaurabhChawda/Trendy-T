@@ -12,10 +12,6 @@
     }
     .card-product{
       order:2;
-    }
-  }
-  @media screen and (max-width: 550px) {
-    .card-product{
       margin: 2em 1em;
     }
   }
