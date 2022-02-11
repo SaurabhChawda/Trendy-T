@@ -20,13 +20,18 @@
         <ul class="nav-bar__list">
             <li><a class="nav-bar__item" href="/index.html">Home</a></li>
             <li><a class="nav-bar__item" href="/Product-Page/product.html">Product</a></li>
-            <li><a class="nav-bar__item" href="/wishlist-page/wishlist.html"><img class="nav-bar__img--icon nav-bar__img--wishlist"
+
+            <li class="nav-bar__item" ><a href="/wishlist-page/wishlist.html"><img
+                        class="nav-bar__img--icon nav-bar__img--wishlist"
                         src="/assets/image/HomePage-Images/Wishlist.png" alt="Wishlist"></a></li>
-            <li class="nav-bar__item badge__wrapper"><img src="/assets/image/HomePage-Images/cart.png" alt="cart-badge"
-                    class="nav-bar__img--icon nav-bar__img--cart badge__icon--img">
+
+            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"  ><img
+                        src="/assets/image/HomePage-Images/cart.png" alt="cart-badge"
+                        class="nav-bar__img--icon nav-bar__img--cart badge__icon--img"></a>
                 <span class="badge__icon--primary badge--logo ">1</span>
             </li>
-            <li><a class="nav-bar__item" href=""><img class="nav-bar__img--icon nav-bar__img--login"
+            
+            <li class="nav-bar__item"><a href=""><img class="nav-bar__img--icon nav-bar__img--login"
                         src="/assets/image/HomePage-Images/Login.png" alt="Login/Sign-Up"></a></li>
         </ul>
     </nav>
@@ -72,22 +77,14 @@
 
     <div class="sidebar">
             <input class="sidebar__input--search" type="text" placeholder="Search Product">
-            <div class="sidebar--filter sidebar--price-filter">
+            <div class="sidebar--filter sidebar--filter-price">
                 <h2>Price</h2>
-                <ul class="sidebar__list--price-filter sidebar__list">
-                    <li class="sidebar__item sidebar__item--price-filter">
-                        <input class="sidebar__input" type="radio" name="price">
-                        <label for="Price Filter">Range ₹250 - ₹350 </label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--price-filter">
-                        <input class="sidebar__input" type="radio" name="price">
-                        <label for="Price Filter">Range ₹350 - ₹450 </label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--price-filter" >
-                        <input class="sidebar__input" type="radio" name="price">
-                        <label for="Price Filter">Range ₹550 - ₹650 </label>
-                    </li>
-                </ul>
+                <div class="sidebar--price-filter">
+                    <span class="sidebar--price-filter-initial-value">0</span>
+                    <input class="sidebar--price__range" type="range" min="0" max="800" step="200">
+                    <span class="sidebar--price-filter-max-value">800
+                    </span>
+                </div>
             </div>
             <div class="sidebar--filter sidebar--category-filter">
                 <h2>Category</h2>

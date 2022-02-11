@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy-T</title>
+    <link rel="stylesheet" href="/Cart-Page/cart.css">
+    <link rel="stylesheet" href="/Cart-Page/cart-Responsive.css">
+</head>
+
+<body>
+    <!-- Navigation Bar Desktop -->
+    <nav class="nav-bar nav-bar--simple">
+        <nav class="nav-bar--logo">
+            <a href="/index.html"><img class="nav-bar__img--logo" src="/assets/image/HomePage-Images/Trendy-T Logo.png"
+                    alt="AQUA_UI"></a>
+        </nav>
+        <ul class="nav-bar__list">
+            <li><a class="nav-bar__item" href="/index.html">Home</a></li>
+            <li><a class="nav-bar__item" href="/Product-Page/product.html">Product</a></li>
+
+            <li class="nav-bar__item"><a href="/wishlist-page/wishlist.html"><img
+                        class="nav-bar__img--icon nav-bar__img--wishlist"
+                        src="/assets/image/HomePage-Images/Wishlist.png" alt="Wishlist"></a></li>
+
+            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"><img
+                        src="/assets/image/HomePage-Images/cart.png" alt="cart-badge"
+                        class="nav-bar__img--icon nav-bar__img--cart badge__icon--img"></a>
+                <span class="badge__icon--primary badge--logo ">1</span>
+            </li>
+
+            <li class="nav-bar__item"><a href=""><img class="nav-bar__img--icon nav-bar__img--login"
+                        src="/assets/image/HomePage-Images/Login.png" alt="Login/Sign-Up"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation Bar For Tab and Mobile  -->
+
+    <div class="nav-bar nav-bar--hamburger">
+        <div class="nav-bar--logo">
+            <a href="/index.html"><img class="nav-bar__img--logo" src="/assets/image/HomePage-Images/Trendy-T Logo.png"
+                    alt="TRENDY-T"></a>
+        </div>
+        <div class="nav-bar--hamburger">
+            <img class="nav-bar__img--hamburger" src="/assets/image/HomePage-Images/Hamburger Menu.png" alt="Hamburger">
+        </div>
+    </div> -->
+
+    <!---Hamburger List -->
+    <div class="hamburger">
+        <div class="hamburger__header--wrapper">
+            <h1 class="hamburger__title">TRENDY-T</h1>
+            <img class="hamburger__close-btn" src="/assets/image/HomePage-Images/Hamburger Close.png" alt="Hamburger">
+        </div>
+        <ul class="hamburger__list">
+            <a href="/index.html">
+                <li class="hamburger__item">Home</li>
+            </a>
+            <a href="/Product-Page/product.html">
+                <li class="hamburger__item">Product</li>
+            </a>
+            <a href="/wishlist-page/wishlist.html">
+                <li class="hamburger__item">Wishlist</li>
+            </a>
+            <a href="/Cart-Page/cart.html">
+                <li class="hamburger__item">Cart</li>
+            </a>
+            <a href="">
+                <button class="hamburger__item hamburger__btn ">Login / Sign-Up</button>
+            </a>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Product Card-->
+        <section class="cart__header">
+            <h3 class="cart__title">My Cart</h3>
+        </section>
+
+        <section class="cart__content">
+            <div class="card-product">
+                <!-- product One -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Tom and Jerry.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Tom and Jerry Tshirt</h3>
+                            <span class="card-product__content--price">₹ 350/-</span>
+                            <small class="card-product__content--price-line">₹ 500</small>
+                        </div>
+                        <div class="card-product__wrapper--quantity">
+                            <small class="card-product--quantity">Quantity</small>
+                            <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                            <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                        </div>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product Two -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Tom.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Tom Tshirt</h3>
+                            <span class="card-product__content--price">₹ 300/-</span>
+                            <small class="card-product__content--price-line">₹ 450</small>
+                        </div>
+                    </div>
+                    <div class="card-product__wrapper--quantity">
+                        <small class="card-product--quantity">Quantity</small>
+                        <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                        <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- product Three -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Talk to you later.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Talk to you later</h3>
+                            <span class="card-product__content--price">₹ 400/-</span>
+                            <small class="card-product__content--price-line">₹ 500</small>
+                        </div>
+                    </div>
+                    <div class="card-product__wrapper--quantity">
+                        <small class="card-product--quantity">Quantity</small>
+                        <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                        <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product Four -->
+                <div class="card-product__wrapper">
+                    <div class="card-product__primary--actions">
+                        <div class="card-product__bg">
+                            <img class="card-product__bg--img" src="/assets/image/Product-Images/Owl.jpg">
+                        </div>
+                        <div class="card-product__content">
+                            <h3 class="card-product__content--title">Owl Tshirt</h3>
+                            <span class="card-product__content--price">₹ 350/-</span>
+                            <small class="card-product__content--price-line">₹ 500</small>
+                        </div>
+                    </div>
+                    <div class="card-product__wrapper--quantity">
+                        <small class="card-product--quantity">Quantity</small>
+                        <button class="card-product--quantity-demo card-product--quantity-add">Add</button>
+                        <button class="card-product--quantity-demo card-product--quantity-sub">Sub</button>
+                    </div>
+                    <div class="card-product__secondary--actions">
+                        <div class="card-product__button--container">
+                            <button class=" card-product__btn card-product__button--primary">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card product Ends Here-->
+
+            <!-- cart Detail -->
+
+            <div class="cart__detail">
+                <div class="cart__item-demo cart__detail--price">
+                    <h1>PRICE DETAILS</h1>
+                </div>
+                <hr>
+                <div class="cart__item-demo cart__detail--total">
+                    <small>Items</small>
+                    <small>2</small>
+                </div>
+                <div class="cart__item-demo cart__detail--mrp">
+                    <small>Total MRP</small>
+                    <small>₹1000</small>
+                </div>
+                <div class="cart__item-demo cart__detail--discount">
+                    <small>Discount</small>
+                    <small>- ₹100</small>
+                </div>
+                <div class="cart__item-demo cart__detail-delivery">
+                    <small>Delivery Charges</small>
+                    <small>₹100</small>
+                </div>
+                <hr>
+                <div class="cart__item-demo cart__detail--total">
+                    <small>Total </small>
+                    <small>₹1000</small>
+                </div>
+                <div class="cart__item-demo cart__detail--place-order">
+                    <button class="cart__btn">Place order</button>
+                </div>
+            </div>
+
+            <!-- Cart Detail Ends Here -->
+
+        </section>
+    </main>
+    <!-- Footer -->
+
+    <div class="footer">
+        <ul class="footer__list">
+            <li><a class="footer__item" href="https://github.com/SaurabhChawda/AQUA_UI"><img class="footer__img"
+                        src="/assets/image/HomePage-Images/Github.png" alt="Github"></a></li>
+            <li><a class="footer__item" href="https://twitter.com/home"><img class="footer__img"
+                        src="/assets/image/HomePage-Images/Twitter sds.png" alt="Twitter"></a></li>
+            <li><a class="footer__item" href="https://www.linkedin.com/in/saurabh-chawda-36a28a1b7/"><img
+                        class="footer__img" src="/assets/image/HomePage-Images/LinkedIn.png" alt="LinkedIn"></a></li>
+        </ul>
+        <div class="footer__content--wrapper">
+            <h6 class="footer__content">Designed by Saurabh Chawda</h6>
+        </div>
+    </div>
+    <script src="/Cart-Page/cart.js"></script>
+</body>
+
+</html>
