@@ -40,6 +40,16 @@ body {
     "main"
     "footer";
 }
+/* Preloader */
+.preloader{
+  background:url("/assets/image/HomePage-Images/Preloader.gif") no-repeat center center;
+  background-size: 15%;
+  background-color: rgb(43, 42, 42);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index:100;
+}
 
 /*****Navigation Bar For Desktop *****/
 

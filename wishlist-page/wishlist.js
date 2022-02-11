@@ -25,3 +25,9 @@ hamburgerClose.addEventListener('click',()=>{
     hamburgerMenu.style.width="0vh"
 
 })
+
+preLoader.addEventListener("load",()=>{
+   setTimeout(() => {
+      preLoader.style.display = 'none';
+   },2000);
+})

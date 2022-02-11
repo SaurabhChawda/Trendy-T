@@ -3,6 +3,7 @@
 const hamburgerMenu = document.querySelector('.hamburger')
 const hamburgerOpen = document.querySelector('.nav-bar__img--hamburger')
 const hamburgerClose = document.querySelector('.hamburger__close-btn')
+const preLoader = document.querySelector('.preloader')
 
 hamburgerOpen.addEventListener('click',()=>{
    hamburgerMenu.style.visibility = "visible";
@@ -38,3 +39,10 @@ sidebarClearBtn.addEventListener('click',()=>{
    });
 })
 
+//pre loader//
+
+window.addEventListener("load",()=>{
+   setTimeout(() => {
+      preLoader.style.display = 'none';
+   },2000);
+})

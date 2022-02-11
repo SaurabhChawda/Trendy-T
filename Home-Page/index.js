@@ -1,6 +1,7 @@
 const hamburgerMenu = document.querySelector('.hamburger')
 const hamburgerOpen = document.querySelector('.nav-bar__img--hamburger')
 const hamburgerClose = document.querySelector('.hamburger__close-btn')
+const preLoader = document.querySelector('.preloader')
 
 hamburgerOpen.addEventListener('click',()=>{
    hamburgerMenu.style.visibility = "visible";
@@ -22,4 +23,10 @@ hamburgerClose.addEventListener('click',()=>{
     hamburgerMenu.style.visibility = "hidden"
     hamburgerMenu.style.width="0vh"
 
+})
+
+preLoader.addEventListener("load",()=>{
+   setTimeout(() => {
+      preLoader.style.display = 'none';
+   },2000);
 })

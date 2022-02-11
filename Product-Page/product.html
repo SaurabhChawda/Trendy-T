@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <!-- preloader -->
+
+    <div class="preloader"></div>
+
     <!-- Navigation Bar Desktop -->
     <nav class="nav-bar nav-bar--simple">
         <nav class="nav-bar--logo">
@@ -21,18 +25,19 @@
             <li><a class="nav-bar__item" href="/index.html">Home</a></li>
             <li><a class="nav-bar__item" href="/Product-Page/product.html">Product</a></li>
 
-            <li class="nav-bar__item" ><a href="/wishlist-page/wishlist.html"><img
+            <li class="nav-bar__item"><a href="/wishlist-page/wishlist.html"><img
                         class="nav-bar__img--icon nav-bar__img--wishlist"
                         src="/assets/image/HomePage-Images/Wishlist.png" alt="Wishlist"></a></li>
 
-            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"  ><img
+            <li class="nav-bar__item badge__wrapper"><a href="/Cart-Page/cart.html"><img
                         src="/assets/image/HomePage-Images/cart.png" alt="cart-badge"
                         class="nav-bar__img--icon nav-bar__img--cart badge__icon--img"></a>
                 <span class="badge__icon--primary badge--logo ">1</span>
             </li>
-            
-            <li class="nav-bar__item"><a href="/Login-page/login.html"><img class="nav-bar__img--icon nav-bar__img--login"
-                        src="/assets/image/HomePage-Images/Login.png" alt="Login/Sign-Up"></a></li>
+
+            <li class="nav-bar__item"><a href="/Login-page/login.html"><img
+                        class="nav-bar__img--icon nav-bar__img--login" src="/assets/image/HomePage-Images/Login.png"
+                        alt="Login/Sign-Up"></a></li>
         </ul>
     </nav>
 
@@ -76,74 +81,74 @@
     <!-- sidebar -->
 
     <div class="sidebar">
-            <input class="sidebar__input--search" type="text" placeholder="Search Product">
-            <div class="sidebar--filter sidebar--filter-price">
-                <h2>Price</h2>
-                <div class="sidebar--price-filter">
-                    <span class="sidebar--price-filter-initial-value">0</span>
-                    <input class="sidebar--price__range" type="range" min="0" max="800" step="200">
-                    <span class="sidebar--price-filter-max-value">800
-                    </span>
-                </div>
+        <input class="sidebar__input--search" type="text" placeholder="Search Product">
+        <div class="sidebar--filter sidebar--filter-price">
+            <h2>Price</h2>
+            <div class="sidebar--price-filter">
+                <span class="sidebar--price-filter-initial-value">0</span>
+                <input class="sidebar--price__range" type="range" min="0" max="800" step="200">
+                <span class="sidebar--price-filter-max-value">800
+                </span>
             </div>
-            <div class="sidebar--filter sidebar--category-filter">
-                <h2>Category</h2>
-                <ul class="sidebar__list sidebar__list--category-filter">
-                    <li class="sidebar__item sidebar__item--category-filter">
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Man T-Shirt</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--category-filter">
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Women T-Shirt</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--category-filter" >
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Kid T-Shirt</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--category-filter" >
-                        <input class="sidebar__input" type="checkbox">
-                        <label for="category Filter">Family T-Shirt</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar--filter sidebar--rating-filter">
-                <h2>Rating</h2>
-                <ul class="sidebar__list sidebar__list--rating-filter">
-                    <li class="sidebar__item sidebar__item--rating-filter">
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">4 Star & above</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--rating-filter">
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">3 Star & above</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--rating-filter" >
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">2 Star & above</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--rating-filter" >
-                        <input class="sidebar__input" type="radio" name="Rating">
-                        <label for="rating Filter">1 Star & above</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar--filter sidebar--sortBy-filter">
-                <h2>Sort by</h2>
-                <ul class="sidebar__list sidebar__list--sortBy-filter">
-                    <li class="sidebar__item sidebar__item--sortBy-filter">
-                        <input class="sidebar__input" type="radio" name="Sorting">
-                        <label for="sortBy Filter">Price - Low to high</label>
-                    </li>
-                    <li class="sidebar__item sidebar__item--sortBy-filter">
-                        <input class="sidebar__input" type="radio" name="Sorting">
-                        <label for="sortBy Filter">price - High to Low</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar__btn">
-                <button class="sidebar__btn--clear-filter">Clear Filter</button>
-            </div>
+        </div>
+        <div class="sidebar--filter sidebar--category-filter">
+            <h2>Category</h2>
+            <ul class="sidebar__list sidebar__list--category-filter">
+                <li class="sidebar__item sidebar__item--category-filter">
+                    <input class="sidebar__input" type="checkbox">
+                    <label for="category Filter">Man T-Shirt</label>
+                </li>
+                <li class="sidebar__item sidebar__item--category-filter">
+                    <input class="sidebar__input" type="checkbox">
+                    <label for="category Filter">Women T-Shirt</label>
+                </li>
+                <li class="sidebar__item sidebar__item--category-filter">
+                    <input class="sidebar__input" type="checkbox">
+                    <label for="category Filter">Kid T-Shirt</label>
+                </li>
+                <li class="sidebar__item sidebar__item--category-filter">
+                    <input class="sidebar__input" type="checkbox">
+                    <label for="category Filter">Family T-Shirt</label>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar--filter sidebar--rating-filter">
+            <h2>Rating</h2>
+            <ul class="sidebar__list sidebar__list--rating-filter">
+                <li class="sidebar__item sidebar__item--rating-filter">
+                    <input class="sidebar__input" type="radio" name="Rating">
+                    <label for="rating Filter">4 Star & above</label>
+                </li>
+                <li class="sidebar__item sidebar__item--rating-filter">
+                    <input class="sidebar__input" type="radio" name="Rating">
+                    <label for="rating Filter">3 Star & above</label>
+                </li>
+                <li class="sidebar__item sidebar__item--rating-filter">
+                    <input class="sidebar__input" type="radio" name="Rating">
+                    <label for="rating Filter">2 Star & above</label>
+                </li>
+                <li class="sidebar__item sidebar__item--rating-filter">
+                    <input class="sidebar__input" type="radio" name="Rating">
+                    <label for="rating Filter">1 Star & above</label>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar--filter sidebar--sortBy-filter">
+            <h2>Sort by</h2>
+            <ul class="sidebar__list sidebar__list--sortBy-filter">
+                <li class="sidebar__item sidebar__item--sortBy-filter">
+                    <input class="sidebar__input" type="radio" name="Sorting">
+                    <label for="sortBy Filter">Price - Low to high</label>
+                </li>
+                <li class="sidebar__item sidebar__item--sortBy-filter">
+                    <input class="sidebar__input" type="radio" name="Sorting">
+                    <label for="sortBy Filter">price - High to Low</label>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar__btn">
+            <button class="sidebar__btn--clear-filter">Clear Filter</button>
+        </div>
     </div>
 
     <main>
