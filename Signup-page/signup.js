@@ -25,3 +25,21 @@ hamburgerClose.addEventListener('click',()=>{
     hamburgerMenu.style.width="0vh"
 
 })
+
+// PassWord Eye
+
+const passWordHide = document.querySelector('.signup-form__input--password-hide-icon');
+const inputBoxOne = document.querySelector('.signup-form__input--password-first')
+const inputBoxTwo = document.querySelector('.signup-form__input--password-second')
+
+
+passWordHide.addEventListener('click', () => {
+   if(inputBoxOne.type === "password" && inputBoxTwo.type === "password"){
+      inputBoxOne.type = "text";
+      inputBoxTwo.type = "text"
+   }
+   else{
+      inputBoxOne.type="password"
+      inputBoxTwo.type = "password"
+   }
+})

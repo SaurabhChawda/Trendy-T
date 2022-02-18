@@ -207,6 +207,17 @@ main {
   display: flex;
   flex-direction: column;
 }
+.login-form--password{
+  position: relative;
+}
+.login-form__input--password{
+  width: 100%;
+}
+.login-form__input--password-hide-icon{
+  position:absolute;
+  right:5px;
+  top:10px;
+}
 
 .login-form__input-demo{
   padding:4px 4px;
