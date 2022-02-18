@@ -265,6 +265,20 @@ main {
   display: flex;
   justify-content: center;
 }
+.login-form--logOut{
+ text-align: center;
+}
+.login-form__btn--logOut{
+  color: var(--primary-color);
+  font-size: var(--font-size-medium);
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 5px;
+}
+.login-form__btn--logOut:hover{
+  color:red;
+}
 .login-form__btn--new-account{
   margin: 8px;
   background-color: transparent;
