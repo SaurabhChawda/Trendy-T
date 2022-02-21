@@ -13,7 +13,7 @@ Trendy-T is a Customized Printed T-shirt E-Commerce website. The Word Trendy sta
 # Live Link
 [https://trendy-t.netlify.app/](https://trendy-t.netlify.app/)
 
-# Aqua_Ui ScreenShots
+# Trendy-T ScreenShots
 ![Home-Page](/assets/image/Markdown-Images/Home-Page.png)
 ![Product-Page](/assets/image/Markdown-Images/Product-page.png)
 ![wishList-Page](/assets/image/Markdown-Images/Wishlist-page.png)
